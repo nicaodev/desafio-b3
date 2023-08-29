@@ -1,9 +1,7 @@
 using calculo_cdb.Infra.IoC;
 using Microsoft.OpenApi.Models;
-using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
-
 
 DependencyInjection.AddDependencyInjection(builder.Services, builder.Configuration);
 // Add services to the container.
@@ -25,12 +23,11 @@ builder.Services.AddSwaggerGen(c =>
         },
     });
 
-    var xmlFilenameSummary = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-    c.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilenameSummary));
+    //var xmlFilenameSummary = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    //c.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilenameSummary));
 });
 
-
-builder.Services.AddCors();
+//builder.Services.AddCors();
 
 var app = builder.Build();
 
@@ -42,7 +39,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseCors(option => option.AllowAnyOrigin());
+//app.UseCors(option => option.AllowAnyOrigin());
 app.UseAuthorization();
 
 app.MapControllers();

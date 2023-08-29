@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\calculo_cdb.Domain\calculo_cdb.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
