@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calculo_cdb_b3.API", "calculo_cdb_b3.API.csproj", "{395470F9-0599-4FF4-9CD0-1CCC43C8CF44}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6735185D-5D0D-4143-9F11-9DDC2A63778F} = {6735185D-5D0D-4143-9F11-9DDC2A63778F}
+		{72E9164E-87D7-4F33-BA99-49816EAC5BD2} = {72E9164E-87D7-4F33-BA99-49816EAC5BD2}
+		{7DF831BA-157C-4239-A108-F313D18CD988} = {7DF831BA-157C-4239-A108-F313D18CD988}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calculo_cdb.Application", "..\calculo_cdb.Application\calculo_cdb.Application.csproj", "{7DF831BA-157C-4239-A108-F313D18CD988}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3C17105C-2AFC-4A32-AD9D-84F222FBB200} = {3C17105C-2AFC-4A32-AD9D-84F222FBB200}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calculo_cdb.Domain", "..\calculo_cdb.Domain\calculo_cdb.Domain.csproj", "{3C17105C-2AFC-4A32-AD9D-84F222FBB200}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calculo_cdb.Infra.Data", "..\calculo_cdb.Infra.Data\calculo_cdb.Infra.Data.csproj", "{6735185D-5D0D-4143-9F11-9DDC2A63778F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3C17105C-2AFC-4A32-AD9D-84F222FBB200} = {3C17105C-2AFC-4A32-AD9D-84F222FBB200}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calculo_cdb.Infra.IoC", "..\calculo_cdb.Infra.IoC\calculo_cdb.Infra.IoC.csproj", "{72E9164E-87D7-4F33-BA99-49816EAC5BD2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3C17105C-2AFC-4A32-AD9D-84F222FBB200} = {3C17105C-2AFC-4A32-AD9D-84F222FBB200}
+		{6735185D-5D0D-4143-9F11-9DDC2A63778F} = {6735185D-5D0D-4143-9F11-9DDC2A63778F}
+		{7DF831BA-157C-4239-A108-F313D18CD988} = {7DF831BA-157C-4239-A108-F313D18CD988}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calculo_cdb.Testes.XUnit", "..\calculo_cdb.Testes.XUnit\calculo_cdb.Testes.XUnit.csproj", "{101E515E-392E-4D59-BEB1-2328803F4E44}"
+	ProjectSection(ProjectDependencies) = postProject
+		{395470F9-0599-4FF4-9CD0-1CCC43C8CF44} = {395470F9-0599-4FF4-9CD0-1CCC43C8CF44}
+		{3C17105C-2AFC-4A32-AD9D-84F222FBB200} = {3C17105C-2AFC-4A32-AD9D-84F222FBB200}
+		{6735185D-5D0D-4143-9F11-9DDC2A63778F} = {6735185D-5D0D-4143-9F11-9DDC2A63778F}
+		{7DF831BA-157C-4239-A108-F313D18CD988} = {7DF831BA-157C-4239-A108-F313D18CD988}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{395470F9-0599-4FF4-9CD0-1CCC43C8CF44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{395470F9-0599-4FF4-9CD0-1CCC43C8CF44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{395470F9-0599-4FF4-9CD0-1CCC43C8CF44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{395470F9-0599-4FF4-9CD0-1CCC43C8CF44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DF831BA-157C-4239-A108-F313D18CD988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DF831BA-157C-4239-A108-F313D18CD988}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DF831BA-157C-4239-A108-F313D18CD988}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DF831BA-157C-4239-A108-F313D18CD988}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C17105C-2AFC-4A32-AD9D-84F222FBB200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C17105C-2AFC-4A32-AD9D-84F222FBB200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C17105C-2AFC-4A32-AD9D-84F222FBB200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C17105C-2AFC-4A32-AD9D-84F222FBB200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6735185D-5D0D-4143-9F11-9DDC2A63778F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6735185D-5D0D-4143-9F11-9DDC2A63778F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6735185D-5D0D-4143-9F11-9DDC2A63778F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6735185D-5D0D-4143-9F11-9DDC2A63778F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72E9164E-87D7-4F33-BA99-49816EAC5BD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E9164E-87D7-4F33-BA99-49816EAC5BD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E9164E-87D7-4F33-BA99-49816EAC5BD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E9164E-87D7-4F33-BA99-49816EAC5BD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{101E515E-392E-4D59-BEB1-2328803F4E44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{101E515E-392E-4D59-BEB1-2328803F4E44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{101E515E-392E-4D59-BEB1-2328803F4E44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{101E515E-392E-4D59-BEB1-2328803F4E44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A8C42F0-D919-4DDF-AC8A-8E1D18AE40F0}
+	EndGlobalSection
+EndGlobal
